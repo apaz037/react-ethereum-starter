@@ -8,6 +8,7 @@ import Web3 from "web3";
 // UI Components
 import { Button, TextField } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles'
+import Nav from "./components/Nav.js";
 
 // Styles
 import "./App.css";
@@ -49,6 +50,7 @@ function App() {
 
   return (
     <div className={classes.root}>
+      <Nav />
       <div className="main">
         <div className="card">
           <TextField
@@ -75,6 +77,7 @@ function App() {
             >
               Get your uint256
             </Button>
+ 
             {getNumber}
           </form>
         </div>
@@ -82,5 +85,5 @@ function App() {
     </div>
   );
  }
- 
+
  export default App;
